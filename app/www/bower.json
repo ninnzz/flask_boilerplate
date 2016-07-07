@@ -1,0 +1,17 @@
+{
+  "name": "www",
+  "version": "0.0.0",
+  "homepage": "https://github.com/anyTV/python-flask-project-structure",
+  "authors": [
+    "pprmint <nreclarin@gmail.com>"
+  ],
+  "description": "Frontend pages",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

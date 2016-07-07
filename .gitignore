@@ -1,0 +1,17 @@
+*.pyc
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+*.egg-info
+build
+
+dist
+bin
+venv
+
+trash
+sblm.sublime-workspace
