@@ -51,7 +51,7 @@ def load_config(app, config=None):
 	env = Config.BaseConfig.APP_ENV
 
 	# checks available environment
-	if os.environ.get('APP_ENV') is not None:
+	if os.environ.get('NMI_ENV') is not None:
 		env = os.environ.get('NMI_ENV').lower()
 
 	app.config.from_object(get_env(env))
