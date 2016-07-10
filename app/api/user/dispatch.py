@@ -25,7 +25,7 @@ def add_user(res):
     params = utils.get_data(
     	[	
     		'email', 'password', 'first_name',
-    		'last_name', 'age', 'gender'
+    		'last_name', 'age'
     	], [], 
     	request.values)
     

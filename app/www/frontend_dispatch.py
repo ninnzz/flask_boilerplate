@@ -13,6 +13,10 @@ mod_frontend = Blueprint('frontend', __name__)
 def login_page():
     return render_template('pages/login.html')
 
+@mod_frontend.route('/signup', methods=['GET'])
+def signup_page():
+    return render_template('pages/singup.html')
+
 @mod_frontend.route('/profile', methods=['GET'])
 @login_required
 def user_profile():

@@ -21,40 +21,40 @@ __all__ = ['init_app']
 
 
 def init_app(config=None):
-	""" App initialization """
+    """ App initialization """
 
-	# Declare app
-	app = Flask(Config.BaseConfig.APP_NAME, 
-		instance_path=CONST.INSTANCE_FOLDER_PATH, 
-		instance_relative_config=True,
-		template_folder= Config.BaseConfig.BASE_DIR + CONST.TEMPLATE_FOLDER)
+    # Declare app
+    app = Flask(Config.BaseConfig.APP_NAME, 
+        instance_path=CONST.INSTANCE_FOLDER_PATH, 
+        instance_relative_config=True,
+        template_folder= Config.BaseConfig.BASE_DIR + CONST.TEMPLATE_FOLDER)
 
-	load_config(app, config)
-	load_middlewares(app)
-	load_lib(app)
-	load_blueprints(app)
+    load_config(app, config)
+    load_middlewares(app)
+    load_lib(app)
+    load_blueprints(app)
 
-	return app
+    return app
 
 
 def load_config(app, config=None):
-	""" Load the base config and env config """
+    """ Load the base config and env config """
 
-	app.config.from_object(Config.DefaultConfig)
+    app.config.from_object(Config.DefaultConfig)
 
-	# Loads config file if there are any config included
-	if config:
-		app.config.from_object(config)
-		print(' * Loading custom config')
-		return
+    # Loads config file if there are any config included
+    if config:
+        app.config.from_object(config)
+        print(' * Loading custom config')
+        return
 
-	env = Config.BaseConfig.APP_ENV
+    env = Config.BaseConfig.APP_ENV
 
-	# checks available environment
-	if os.environ.get('NMI_ENV') is not None:
-		env = os.environ.get('NMI_ENV').lower()
+    # checks available environment
+    if os.environ.get('NMI_ENV') is not None:
+        env = os.environ.get('NMI_ENV').lower()
 
-	app.config.from_object(get_env(env))
+    app.config.from_object(get_env(env))
 
 
 def load_lib(app):
