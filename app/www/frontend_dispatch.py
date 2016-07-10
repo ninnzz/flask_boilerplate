@@ -15,7 +15,7 @@ def login_page():
 
 @mod_frontend.route('/signup', methods=['GET'])
 def signup_page():
-    return render_template('pages/singup.html')
+    return render_template('pages/signup.html')
 
 @mod_frontend.route('/profile', methods=['GET'])
 @login_required
