@@ -75,12 +75,11 @@ Model is the the one that handles the transactional operations.
 - Get
 - Search
 - Delete
-- 
 
 Contributing
 -----
 Push all the changes to your own branch before making a pull request to the master branch
-####### New feature request
+###### New feature request
 For adding new feature make sure to follow the following format for the pull request
 - Title should be `feature/<feature_name>`
 - Description should have the ff template
@@ -95,7 +94,7 @@ For adding new feature make sure to follow the following format for the pull req
         - Email
 ```
 
-####### Fixing issues
+###### Fixing issues
 For adding new feature make sure to follow the following format for the pull request
 - Title should be `fix/<issue_that_needs_fixing>`
 - Description should have the ff template
