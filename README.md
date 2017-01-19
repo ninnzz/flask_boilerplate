@@ -1,6 +1,9 @@
 Flask Boilerplate
 =====
 
+
+[![Requirements Status](https://requires.io/github/pprmint/flask_boilerplate/requirements.svg?branch=master)](https://requires.io/github/pprmint/flask_boilerplate/requirements/?branch=master
+
 Introduction
 -----
 A boilerplate for REST APIs implement using python flask. Ideal for doing micro services and API integrations.
