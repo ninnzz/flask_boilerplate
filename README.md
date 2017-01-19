@@ -2,7 +2,7 @@ Flask Boilerplate
 =====
 
 
-[![Requirements Status](https://requires.io/github/pprmint/flask_boilerplate/requirements.svg?branch=master)](https://requires.io/github/pprmint/flask_boilerplate/requirements/?branch=master
+[![Requirements Status](https://requires.io/github/pprmint/flask_boilerplate/requirements.svg?branch=master)](https://requires.io/github/pprmint/flask_boilerplate/requirements/?branch=master)
 
 Introduction
 -----
