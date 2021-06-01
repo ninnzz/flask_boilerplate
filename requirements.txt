@@ -16,7 +16,7 @@ rainbow-logging-handler==2.2.2
 requests==2.18.3
 SQLAlchemy==1.1.13
 uritemplate==3.0.0
-urllib3==1.22
+urllib3==1.26.5
 utility==1.0
 virtualenv==15.1.0
 Werkzeug==0.12.2
